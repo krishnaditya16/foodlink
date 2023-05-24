@@ -66,10 +66,7 @@
         <activity
             android:name=".MainActivity"
             android:exported="false" />
-
-        <meta-data
-            android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyB28fJcobn1PG42Lxy8ipxwljbMCTw4CTU" />
+        
     </application>
 
 </manifest>
