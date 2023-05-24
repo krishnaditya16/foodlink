@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".HomeMenuFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="28dp">
+
+        <ImageView
+            android:id="@+id/search_home"
+            android:layout_width="30dp"
+            android:layout_height="35dp"
+            android:src="@drawable/baseline_search_24" />
+
+        <ImageView
+            android:id="@+id/profileHome"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/profile_image"
+            android:background="@drawable/circle_profile"
+            android:scaleType="centerCrop"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp">
+
+        <ImageView
+            android:id="@+id/i1"
+            android:layout_width="10dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/baseline_location_on_24" />
+
+        <TextView
+            android:id="@+id/t1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delivery"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:layout_toRightOf="@id/i1"/>
+
+        <TextView
+            android:id="@+id/locationHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/t1"
+            android:text="User Location"
+            android:textSize="14dp" />
+
+<!--        <ImageView-->
+<!--            android:id="@+id/filterHome"-->
+<!--            android:layout_width="30dp"-->
+<!--            android:layout_height="30dp"-->
+<!--            android:layout_alignParentRight="true"-->
+<!--            android:src="@drawable/baseline_filter_list_24" />-->
+
+        <ImageView
+            android:id="@+id/userOrderHome"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/baseline_shopping_basket_24" />
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:layout_alignParentRight="true">-->
+<!--            <ImageView-->
+<!--                android:layout_width="30dp"-->
+<!--                android:layout_height="35dp"-->
+<!--                android:src="@drawable/baseline_shopping_basket_24"-->
+<!--                android:layout_centerVertical="true"-->
+<!--                android:layout_marginRight="10dp"/>-->
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:textSize="16sp"-->
+<!--                android:textStyle="bold"-->
+<!--                android:text="Your Order"-->
+<!--                android:layout_gravity="center_vertical"/>-->
+<!--        </LinearLayout>-->
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_home_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="Today's Menu"
+            android:textSize="24dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:padding="20dp">
+
+            <RelativeLayout
+                android:id="@+id/heroMenu"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:background="@drawable/big_card">
+
+                <TextView
+                    android:id="@+id/tt1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="120dp"
+                    android:text="Speciality Steak"
+                    android:textColor="#fff"
+                    android:textSize="24dp" />
+
+                <ImageView
+                    android:layout_width="110dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@id/tt1"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/rating_white_small" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Editor's Pick"
+            android:textSize="24dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="15dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/menu_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="20dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

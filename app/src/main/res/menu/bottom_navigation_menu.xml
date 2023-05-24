@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:title="Home"
+        android:enabled="true"
+        android:icon="@drawable/baseline_home_24" />
+
+    <item
+        android:id="@+id/navigation_restaurant"
+        android:enabled="true"
+        android:title="Restaurant"
+        android:icon="@drawable/baseline_restaurant_menu_24" />
+
+    <item
+        android:id="@+id/navigation_delivery"
+        android:enabled="true"
+        android:title="Delivery"
+        android:icon="@drawable/baseline_delivery_dining_24" />
+
+    <item
+        android:id="@+id/navigation_promo"
+        android:enabled="true"
+        android:title="Maps"
+        android:icon="@drawable/baseline_local_offer_24" />
+
+</menu>

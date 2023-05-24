@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "917820512245",
+    "project_id": "foodlink-ce559",
+    "storage_bucket": "foodlink-ce559.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:917820512245:android:a68ae928dff658bdaf32bc",
+        "android_client_info": {
+          "package_name": "com.krishnaditya.foodlink"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "917820512245-09f5ovbh4rvrqnusv4n17nncmbjnpsv3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAMcgvsvKviFDDvZZggQ436wdnchcsUnvE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "917820512245-09f5ovbh4rvrqnusv4n17nncmbjnpsv3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
